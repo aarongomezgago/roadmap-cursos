@@ -76,9 +76,9 @@ En 12 meses, **Learnity** se consolidará como un espacio de referencia para la 
 | # | Restricción | Cómo la vamos a cumplir |
 |---|-------------|--------------------------------------|
 | 1 | Mobile-first con mejora progresiva: base sin media queries; `@media (min-width: …)` solo para agregar/mejorar | Estilos CSS base redactados exclusivamente para móviles. Se aplicará \`@media (min-width: ...)\` únicamente para adaptar a escritorio. |
-| 2 | Paginación de todas las consultas de listado y de sus tablas | Paginación basada en desplazamiento (offset+total) — ver TRD §5 |
+| 2 | Paginación de todas las consultas de listado y de sus tablas | Paginación basada en desplazamiento (offset+total) — ver [TRD §5](./TRD.md#5-requisitos-no-funcionales-técnicos-traducción-de-las-restricciones) |
 | 3 | Menú sándwich en mobile | Menú lateral desplegable en la barra de navegación para móvil, que pasa a ser barra horizontal en escritorio. |
-| 4 | Screaming Architecture | Carpetas agrupadas por dominio — ver TRD §3.2 |
+| 4 | Screaming Architecture | Carpetas agrupadas por dominio — ver [TRD §3.2](./TRD.md#32-estructura-de-carpetas) |
 
 ## 8. Vacíos de la SPEC de clase y decisiones tomadas
 
