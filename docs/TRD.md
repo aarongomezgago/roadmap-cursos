@@ -117,7 +117,7 @@ flowchart LR
 
   | Variable | Ejemplo | Obligatoria | Descripción |
   |----------|---------|-------------|-------------|
-  | DATABASE_URL | postgresql://…@postgres:5432/learnity_db | sí | cadena de conexión a la base de datos PostgreSQL |
+  | DATABASE_URL | postgresql://user:pass@postgres:5432/learnity_db | sí | cadena de conexión a la base de datos PostgreSQL |
   | SECRET_KEY | supersecretkey_learnity_2026_chang_me | sí | clave secreta para la firma de tokens JWT |
   | ALGORITHM | HS256 | sí | algoritmo de encriptación para tokens JWT |
   | ACCES_TOKEN_EXPIRE_MINUTES | 60 | sí | tiempo de expiración de las sesiones JWT en minutos |
@@ -126,7 +126,7 @@ flowchart LR
 
 - **Logging y excepciones:**
   - **Logging**: Se utiliza módulo estandar logging de Python en nivel INFO para entornos de desarrollo y ERROR para fallos críticos, registrando peticiones fallidas (HTTP 4xx/5xx) y eventos de seguridad/autenticación.
-  - **Excepciones**: Se capturan de manera global mediante exception handler en FastAPI, transformando cualquier fallo no controlado o HTTPException en formato estándar de la API |
+  - **Excepciones**: Se capturan de manera global mediante exception handler en FastAPI, transformando cualquier fallo no controlado o HTTPException en formato estándar de la API.
 
 
 ## 5. Requisitos no funcionales técnicos (traducción de las restricciones)
