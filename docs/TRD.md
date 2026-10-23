@@ -1,4 +1,4 @@
-# TRD — Technical Requirements Document — [Nombre del producto]
+# TRD — Technical Requirements Document — Learnity
 
 ## 1. Stack y versiones exactas
 
