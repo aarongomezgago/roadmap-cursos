@@ -67,12 +67,12 @@ En 12 meses, **Learnity** se consolidará como un espacio de referencia para la 
 |------|------------|--------------------------|
 | Frontend | React + Vite + pnpm | react 19.x, vite x.y, pnpm 12.14 |
 | Backend | FastAPI + uv | fastapi 0.158.2, uv 0.13.4 |
-| Base de datos | PostgreSQL | [18.6] |
+| Base de datos | PostgreSQL | 18.6 |
 | Infra (dev) | Docker + Docker Compose | 24.0.7 |
 
 ## 7. Restricciones técnicas heredadas de la SPEC de clase
 
-| # | Restricción | Cómo la vamos a cumplir (1-2 líneas) |
+| # | Restricción | Cómo la vamos a cumplir |
 |---|-------------|--------------------------------------|
 | 1 | Mobile-first con mejora progresiva: base sin media queries; `@media (min-width: …)` solo para agregar/mejorar | Estilos CSS base redactados exclusivamente para móviles. Se aplicará \`@media (min-width: ...)\` únicamente para adaptar a escritorio. |
 | 2 | Paginación de todas las consultas de listado y de sus tablas | Paginación basada en desplazamiento (offset+total) — ver TRD §5 |
