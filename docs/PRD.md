@@ -66,7 +66,7 @@
 | RNF-003 | Seguridad y protección en el login mediante límite de tasa de peticiones (rate limiting). | heredado de SPEC clase |
 | RNF-004 | Almacenamiento seguro de credenciales utilizando bycript como mínimo para las contraseñas | heredado de SPEC clase |
 | RNF-005 | Arquitectura del código estructurada por dominio | heredado de SPEC clase |
-| RMF-006 | Tiempo de respuesta del catálogo paginado inferior a 2 segundos para garantizar una navegación fluida | Decisión propia |
+| RNF-006 | Tiempo de respuesta del catálogo paginado inferior a 2 segundos para garantizar una navegación fluida | Decisión propia |
 
 ## 7. Reglas de negocio
 
@@ -99,7 +99,7 @@ Más detalle en [SPEC.md § 8](./SPEC.md#8-vacíos-de-la-spec-de-clase-y-decisio
 
 | Pregunta | Impacto | Estado |
 |----------|---------|--------|
-| ¿Los aportes expiran si nadie los valida? | bajo | Decidida: permanecen en cola de moderación sin expiración automática, al menos para la verisón MVP. |
+| ¿Los aportes expiran si nadie los valida? | bajo | Decidida: permanecen en cola de moderación sin expiración automática, al menos para la versión MVP. |
 
 ---
 
