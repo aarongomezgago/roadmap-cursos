@@ -45,6 +45,7 @@ En 12 meses, **Learnity** se consolidará como un espacio de referencia para la 
 
 ### Fuera (out of scope explícito)
 
+- **Cursos nativos y entrega de certificados**: La plataforma no ofrece cursos propios ni otorga certificados, su función es unicamente ofrecer enlaces a cursos externos.
 - **Reproducción o alojamiento de contenido multimedia**: No se almacenan ni reproducen videos, audios o documentos dentro de la plataforma; únicamente se redirige mediante el enlace externo activo proporcionado.
 - **Procesamiento de pagos o monetización**: La plataforma está orientada exclusivamente a cursos de acceso gratuito; no se integran pagos o suscripciones.
 - **Integración automática con APIs externas**: No se sincroniza el progreso del usuario de forma automática con plataformas de terceros; el usuario es quien manualmente marca como completos sus avances en el curso.
@@ -58,7 +59,7 @@ En 12 meses, **Learnity** se consolidará como un espacio de referencia para la 
 | BR-001 | Un curso aportado entra al sistema "en revisión" y solo llega al catálogo comunitario tras validación | SPEC clase ("cursos cargados y **validados** pasan al catálogo") |
 | BR-002 | Cada usuario ve y edita solo su propio roadmap | Decisión propia |
 | BR-003 | Quien aporta un curso declara si él/ella lo tomó | SPEC clase |
-| BR-004 | Solo se permite la carga de cursos 100% gratuitos que cuenten con un enlace web activo funcional | SPEC clase |
+| BR-004 | Solo se permite la carga en catálogo de cursos 100% gratuitos que cuenten con un enlace web activo funcional | SPEC clase |
 | BR-005 | No se permiten aportes duplicados que compartan el mismo enlace web de un curso ya existente | Decisión propia |
 
 ## 6. Stack registrado (versiones exactas con las que se va a desarrollar)
@@ -84,10 +85,10 @@ En 12 meses, **Learnity** se consolidará como un espacio de referencia para la 
 | # | Vacío detectado en la SPEC | Opciones consideradas | Decisión | Dónde se desarrolla |
 |---|----------------------------|-----------------------|----------|---------------------|
 | 1 | ¿Quién y cómo se validan los cursos aportados? | Validación por moderador / puntuación o votos de la comunidad | Un Administrador revisa un curso aportado en estado 'pendiente' y aprueba el contenido, pasando el mismo al estado 'aprobado' | PRD BR-001 / PRD US-005 / BackendSchema §3 |
-| 2 | ¿Hay roles? | Rol único / Estudiante y Administrador | Dos roles definidos: Estudiante (aporta cursos, crea y gestiona su roadmap personal) y Administrador (modera cursos pendientes y administra la WebApp) | PRD §3 y §7 / Backend §2 |
-| 3 | ¿Qué es exactamente "incluir en mi roadmap"? | Asociar un curso del catálogo al roadmap personal | Un Estudiante puede añadir un curso del catálogo general de su interés a su roadmap personal | PRD US-003 / BackendSchema §2 / AppFlow §3 |
-| 4 | ¿Cómo funciona la búsqueda? | Solo texto / solo filtros / ambos | Se puede buscar tanto por texto (título, tema) como por filtros (por categoría, año, características) | PRD US-004 / BackendSchema §4 / AppFlow §3 |
-| 5 | ¿Cómo se evita la duplicación de cursos? | Administrador revisa manualmente / Restringir enlace único en base de datos | Se aplica la restricción para que un enlace sea único; si la URL ya se encuentra registrada, se rechaza el aporte | PRD BR-005 / BackendSchema §2 |
+| 2 | ¿Hay roles? | Rol único / Estudiante y Administrador | Dos roles definidos: Estudiante (aporta cursos, crea y gestiona su roadmap personal) y Administrador (modera cursos pendientes y administra la WebApp) | [PRD §3](./PRD.md#3-personas) / Backend §2 |
+| 3 | ¿Qué es exactamente "incluir en mi roadmap"? | Asociar un curso del catálogo al roadmap personal | Un Estudiante puede añadir un curso del catálogo general de su interés a su roadmap personal | [PRD US-004](./PRD.md#4-user-stories) / BackendSchema §2 / AppFlow §3 |
+| 4 | ¿Cómo funciona la búsqueda? | Solo texto / solo filtros / ambos | Se puede buscar tanto por texto (título, tema) como por filtros (por categoría, año, características) | [PRD US-006](./PRD.md#4-user-stories) / BackendSchema §4 / AppFlow §3 |
+| 5 | ¿Cómo se evita la duplicación de cursos? | Administrador revisa manualmente / Restringir enlace único en base de datos | Se aplica la restricción para que un enlace sea único; si la URL ya se encuentra registrada, se rechaza el aporte | [PRD BR-005](./PRD.md#4-user-stories) / BackendSchema §2 |
 
 ## 9. Historia de la SPEC (autoregistro de cambios)
 
