@@ -11,11 +11,11 @@ Hoy en día, estudiantes o profesionales que buscan capacitarse, pueden enfrenta
 
 Si bien se pueden encontrar cursos en sitios como listas en blogs o foros, generalmente presentan información desactualizada o incompleta, enlaces rotos y falta de validación. El estudiante pierde tiempo buscando por su cuenta detalles como si el curso requiere examen, si otorga certificado o si está avalado por alguna organización. Por otro lado, existen herramientas para crear rutas de avance, pero estas son independientes.
 
-Una comunidad cambia la ecuación del catálogo de cursos, ya que la colaboración, aporte y validación entre los propios usuarios garantiza calidad, una búsqueda más fina y una actualización constante del contenido. Si a eso se le suma la herramienta de roadmaps y la posibilidad de tener un catálogo personal, se tiene un espacio que resuelve ambas problemáticas y permite un seguimiento real del aprendizaje de cada estudiante.
+Una comunidad cambia la ecuación del catálogo de cursos, ya que la colaboración, aporte y validación entre los propios usuarios garantiza calidad, una búsqueda más fina y una actualización constante del contenido. Si a eso se le suma la herramienta de roadmaps, se tiene un espacio que resuelve ambas problemáticas y permite un seguimiento real del aprendizaje de cada estudiante.
 
 ## 3. Visión
 
-En 12 meses, **Learnity** se consolidará como un espacio de referencia para la autoformación educativa libre, respaldado por su comunidad para mantener un catálogo amplio, confiable y lo más actualizado posible. Sus herramientas de roadmaps y catálogos personales facilita al estudiante tener a disposición sus metas de aprendizaje. De esta manera, Learnity ayuda a que cada vez más personas puedan acceder de manera rápida y efectiva a la información que ellos buscan y tener un seguimiento real de su progreso.
+En 12 meses, **Learnity** se consolidará como un espacio de referencia para la autoformación educativa libre, respaldado por su comunidad para mantener un catálogo amplio, confiable y lo más actualizado posible. Su herramienta de roadmaps facilita al estudiante tener a disposición sus metas de aprendizaje. De esta manera, Learnity ayuda a que cada vez más personas puedan acceder de manera rápida y efectiva a la información que ellos buscan y tener un seguimiento real de su progreso.
 
 ## 4. Alcance
 
@@ -34,7 +34,7 @@ En 12 meses, **Learnity** se consolidará como un espacio de referencia para la 
    - ¿extiende certificado?
    - ¿lo avala una organización?
 3. **Declaración de toma**: Marcador donde el usuario que aporta un curso declara si lo tomó o no.
-4. **Catálogo comunitario**: Todo curso aportado y **validado** pasa al catálogo comunitario; desde allí, cualquier usuario puede incluirlo en su catálogo / roadmap personal.
+4. **Catálogo comunitario**: Todo curso aportado y **validado** pasa al catálogo comunitario; desde allí, cualquier usuario puede incluirlo en su roadmap personal.
 5. **Cuenta de usuario y autenticación**:
    - registro de usuario;
    - login;
@@ -83,9 +83,9 @@ En 12 meses, **Learnity** se consolidará como un espacio de referencia para la 
 
 | # | Vacío detectado en la SPEC | Opciones consideradas | Decisión | Dónde se desarrolla |
 |---|----------------------------|-----------------------|----------|---------------------|
-| 1 | ¿Quién y cómo se validan los cursos aportados? | Validación por moderador / puntuación/votos de la comunidad | Un Administrador revisa un curso aportado en estado 'pendiente' y aprueba el contenido, pasando el mismo al estado 'aprobado' | PRD BR-001 / PRD US-005 / BackendSchema §3 |
-| 2 | ¿Hay roles? | Rol único / Estudiante y Administrador | Dos roles definidos: Estudiante (aporta cursos, guarda en catálogo personal, crea y gestiona su roadmap) y Administrador (modera cursos pendientes y administra la WebApp) | PRD §3 y §7 / Backend §2 |
-| 3 | ¿Qué es exactamente "incluir en mi catálogo"? | Añadir un curso a un listado personal | Un Estudiante puede añadir un curso del catálogo general de su interés en su catálogo personal | PRD US-003 / BackendSchema §2 / AppFlow §3 |
+| 1 | ¿Quién y cómo se validan los cursos aportados? | Validación por moderador / puntuación o votos de la comunidad | Un Administrador revisa un curso aportado en estado 'pendiente' y aprueba el contenido, pasando el mismo al estado 'aprobado' | PRD BR-001 / PRD US-005 / BackendSchema §3 |
+| 2 | ¿Hay roles? | Rol único / Estudiante y Administrador | Dos roles definidos: Estudiante (aporta cursos, crea y gestiona su roadmap personal) y Administrador (modera cursos pendientes y administra la WebApp) | PRD §3 y §7 / Backend §2 |
+| 3 | ¿Qué es exactamente "incluir en mi roadmap"? | Asociar un curso del catálogo al roadmap personal | Un Estudiante puede añadir un curso del catálogo general de su interés a su roadmap personal | PRD US-003 / BackendSchema §2 / AppFlow §3 |
 | 4 | ¿Cómo funciona la búsqueda? | Solo texto / solo filtros / ambos | Se puede buscar tanto por texto (título, tema) como por filtros (por categoría, año, características) | PRD US-004 / BackendSchema §4 / AppFlow §3 |
 | 5 | ¿Cómo se evita la duplicación de cursos? | Administrador revisa manualmente / Restringir enlace único en base de datos | Se aplica la restricción para que un enlace sea único; si la URL ya se encuentra registrada, se rechaza el aporte | PRD BR-005 / BackendSchema §2 |
 
