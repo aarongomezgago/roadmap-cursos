@@ -84,11 +84,11 @@ En 12 meses, **Learnity** se consolidará como un espacio de referencia para la 
 
 | # | Vacío detectado en la SPEC | Opciones consideradas | Decisión | Dónde se desarrolla |
 |---|----------------------------|-----------------------|----------|---------------------|
-| 1 | ¿Quién y cómo se validan los cursos aportados? | Validación por moderador / puntuación o votos de la comunidad | Un Administrador revisa un curso aportado en estado 'pendiente' y aprueba el contenido, pasando el mismo al estado 'aprobado' | PRD BR-001 / PRD US-005 / BackendSchema §3 |
+| 1 | ¿Quién y cómo se validan los cursos aportados? | Validación por moderador / puntuación o votos de la comunidad | Un Administrador revisa un curso aportado en estado 'pendiente' y aprueba el contenido, pasando el mismo al estado 'aprobado' | [PRD BR-001](./PRD.md#7-reglas-de-negocio) / [PRD US-005](./PRD.md#4-user-stories) / [BackendSchema §3](./BackendSchema.md#3-api-rest) |
 | 2 | ¿Hay roles? | Rol único / Estudiante y Administrador | Dos roles definidos: Estudiante (aporta cursos, crea y gestiona su roadmap personal) y Administrador (modera cursos pendientes y administra la WebApp) | [PRD §3](./PRD.md#3-personas) / Backend §2 |
-| 3 | ¿Qué es exactamente "incluir en mi roadmap"? | Asociar un curso del catálogo al roadmap personal | Un Estudiante puede añadir un curso del catálogo general de su interés a su roadmap personal | [PRD US-004](./PRD.md#4-user-stories) / BackendSchema §2 / [AppFlow §3](./APPFlow.md#3-fichas-de-pantalla) |
-| 4 | ¿Cómo funciona la búsqueda? | Solo texto / solo filtros / ambos | Se puede buscar tanto por texto (título, tema) como por filtros (por categoría, año, características) | [PRD US-006](./PRD.md#4-user-stories) / BackendSchema §4 / [AppFlow §3](./APPFlow.md#3-fichas-de-pantalla) |
-| 5 | ¿Cómo se evita la duplicación de cursos? | Administrador revisa manualmente / Restringir enlace único en base de datos | Se aplica la restricción para que un enlace sea único; si la URL ya se encuentra registrada, se rechaza el aporte | [PRD BR-005](./PRD.md#4-user-stories) / BackendSchema §2 |
+| 3 | ¿Qué es exactamente "incluir en mi roadmap"? | Asociar un curso del catálogo al roadmap personal | Un Estudiante puede añadir un curso del catálogo general de su interés a su roadmap personal | [PRD US-004](./PRD.md#4-user-stories) / [AppFlow §3](./APPFlow.md#3-fichas-de-pantalla) |
+| 4 | ¿Cómo funciona la búsqueda? | Solo texto / solo filtros / ambos | Se puede buscar tanto por texto (título, tema) como por filtros (por categoría, año, características) | [PRD US-006](./PRD.md#4-user-stories) / [AppFlow §3](./APPFlow.md#3-fichas-de-pantalla) |
+| 5 | ¿Cómo se evita la duplicación de cursos? | Administrador revisa manualmente / Restringir enlace único en base de datos | Se aplica la restricción para que un enlace sea único; si la URL ya se encuentra registrada, se rechaza el aporte | [PRD BR-005](./PRD.md#7-reglas-de-negocio) |
 
 ## 9. Historia de la SPEC (autoregistro de cambios)
 
