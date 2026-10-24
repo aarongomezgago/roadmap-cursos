@@ -47,7 +47,7 @@ flowchart TD
 - **Objetivo del usuario:** Explorar, buscar y filtrar cursos gratuitos validados de la comunidad.
 - **Componentes (de la UX-UI):** header sticky, campo de busqueda outlined, filtros de busqueda, grilla de tarjetas (cards) de curso, paginador centrado, empty state, skeleton
 - **Estados:** `loading` (skeleton) · `ok` · `empty` (sin resultados) · `error` (retry)
-- **APIs que consume:** `GET /api/v1/cursos?page=…&page_size=…&categoria=…&q=…` y `GET /api/v1/categorias` → ver BackendSchema §3.2
+- **APIs que consume:** `GET /api/v1/cursos?page=…&page_size=…&categoria=…&q=…` y `GET /api/v1/categorias`
 - **Navegación:** ruta principal por defecto; navega hacia Detalle de curso; a Aportar curso; a Panel de  moderación (con rol); a Login; y a Mi roadmap.
 
 ### Pantalla: Detalle de curso (`/catalogo/:id`)
