@@ -163,7 +163,7 @@
   - En desktop: Boton hamburguesa oculto. Extremo izquierdo con logo Learnity. Centro y derecha con la barra de navegación horizontal completa (Catalogo / Aportar curso / Mi roadmap) y botones de sesion (Ingresar / Perfil)
 - **Contenedores:** `max-width: 1140px`, centrado horizontalmente, padding lateral `--space-4` en moviles, `--space-5` en tablets / desktop.
 - **Pantallas:**
-> Detalle en APPFlow.md
+> Detalle en [APPFlow.md](./APPFlow.md)
   - Catalogo comunitario (`/catalogo`): header superior sticky, barra de busqueda y filtros, grilla responsive de cards de curso y paginador centrado al pie.
   - Detalle de curso (`/catalogo/:id`): layout de 1 columna centrada con ficha del curso, metadatos, badges de atributos y boton primario "Agregar a mi roadmap".
   - Aportar curso (`/aportar`): formulario enfocado de 1 columna estructuradad en tarjetas de superficie `--color-surface` con campos estilo outlined.
