@@ -127,7 +127,7 @@ erDiagram
 
 **Índices**: idx_aportes_usuario en usuario_id e idx_aportes_curso en curso_id.
 
-#### `roadmap_items`}
+#### `roadmap_items`
 
 | Columna | Tipo | Constraints | Notas |
 |---|---|---|---|
