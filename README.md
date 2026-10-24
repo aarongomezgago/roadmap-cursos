@@ -1,7 +1,6 @@
 # Learnity
 
-> WebApp de gestión de comunidad de cursos: catálogo comunitario de cursos gratuitos
-> + roadmaps personales de aprendizaje.
+> WebApp de gestión de comunidad de cursos: catálogo comunitario de cursos gratuitos + roadmaps personales de aprendizaje.
 >
 > **Estado:** 📚 Documentación (Instancia A) — desarrollo pendiente de aprobación docente.
 
