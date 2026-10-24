@@ -11,9 +11,7 @@
 
 ## Qué hace
 
-[3 a 5 líneas: para quién es, qué problema resuelve y el flujo principal —
-ej. "cualquier persona puede aportar un curso gratuito de cualquier plataforma; tras validación
-entra al catálogo comunitario; desde ahí, cada usuario arma su roadmap personal de aprendizaje".]
+**Learnity** es una plataforma colaborativa diseñada para estudiantes y autodidactas que buscan un espacio que centralice cursos gratuito de la web. Resuelve la dispersión de recursos mediante un catálogo comunitario validado, donde cualquier usuario autenticado puede aportar. A partir de este catálogo público, cada usuario puede consultar el contenido y vincularlo a su propio **roadmap personal de aprendizaje** para tener un seguimiento estructurado de sus metas educativas.
 
 ## Documentación
 
