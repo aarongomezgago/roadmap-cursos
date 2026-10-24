@@ -135,7 +135,7 @@ flowchart LR
 |--------------------|----------------|-------------------|
 | Paginación de listados | Offset + total  | `GET /api/v1/cursos`, `GET /api/v1/roadmap` / componente Paginador en frontend ([UX-UI $4.4](./UX-UI.md#44-listatabla-paginada)) |
 | Mobile-first con mejora progresiva | tokens + breakpoints documentados en UX-UI §3 | Tokens CSS en `frontend/src/styles`, prueba de inspección responsive, guía [UX-UI $3](./UX-UI.md#3-estrategia-mobile-first-con-mejora-progresiva) |
-| Menú sándwich | componente Header con ARIA | Componentes Header y Drawer en `frontend/src/app`, ficha de navegación en APPFlow §3 y [UX-UI $4.5](./UX-UI.md#45-menú-sándwich) |
+| Menú sándwich | componente Header con ARIA | Componentes Header y Drawer en `frontend/src/app`, ficha de navegación en [AppFlow §3](./APPFlow.md#3-fichas-de-pantalla) y [UX-UI $4.5](./UX-UI.md#45-menú-sándwich) |
 | Screaming Architecture | árbol §3.2 | Estructura de directorios según [§3.2](#32-estructura-de-carpetas) |
 | Seguridad en autenticación y rate limiting | Hash de contraseñas con bycrypt y protección contra ataques de fuerza bruta con rate limiting en login | `backend/app/auth` y prueba de llamadas concurrentes a `POST /api/v1/auth/login` |  
 
