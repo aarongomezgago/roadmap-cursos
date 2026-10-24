@@ -1,12 +1,5 @@
 # APPFlow — Mapa del sitio y flujos de usuario — Learnity
 
-> **Qué es:** el esqueleto de navegación. Sitemap (todas las pantallas y sus rutas), ficha por
-> pantalla y flujos de usuario extremo a extremo. Es el puente entre el PRD (qué quiere el usuario)
-> y el BackendSchema (qué API lo sostiene).
-> **Cuándo está bien:** se puede recorrer el producto entero en papel antes de escribir una línea
-> de React; cada pantalla sabe qué API consume, y esas APIs existen en el BackendSchema;
-> no hay ninguna pantalla "colgada" sin ruta ni ningún flujo sin pantallas.
-
 ## 1. Sitemap
 
 ```mermaid
