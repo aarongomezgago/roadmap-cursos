@@ -7,7 +7,7 @@
 - US-003: Como usuario registrado, quiero aportar un curso con sus metadatos, para enriquecer el catálogo
 - US-004: Como usuario registrado quiero agregar cursos del catálogo a mi roadmap personal y gestionar su progreso para seguir el avance de mi aprendizaje
 
-## 2. Módulos y dependencias (mínimo 4)
+## 2. Módulos y dependencias
 
 ```mermaid
 flowchart LR
