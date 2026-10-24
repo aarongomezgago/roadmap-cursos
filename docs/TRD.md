@@ -108,7 +108,7 @@ flowchart LR
         "message": "La URL ingresada ya se encuentra registrada",
         "details": {
           "field": "url",
-          "value": "[suspicious link removed]"
+          "value": "..."
         }
       }
     }
