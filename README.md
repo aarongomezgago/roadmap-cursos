@@ -38,7 +38,7 @@
 | Instancia | Contenido | Estado |
 |-----------|-----------|--------|
 | A — Documentación | repo + 7 documentos | ✅ enviada a aprobación el 24/10/2026 |
-| B — Desarrollo del MVP | ejecución del Implementation Plan | ⏳ pendiente de aprobación |
+| B — Desarrollo del MVP | ejecución del Implementation Plan | ⏳ en desarrollo |
 | C — Clase 27/10 | testing, Docker multi-stage, gestión del cambio | ⏳ |
 
 ## Versionado

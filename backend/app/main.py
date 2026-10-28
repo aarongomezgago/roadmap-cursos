@@ -16,18 +16,33 @@ def listar_cursos():
         "items": [
             {
                 "id": 1,
-                "url": "aprender.com",
-                "titulo": "Curso Prueba",
+                "url": "prueba.com",
+                "titulo": "Curso Prueba 1",
                 "tema": "Prueba",
                 "version": "v2.0",
                 "anio_edicion": 2026,
-                "docentes": "Docente prueba",
+                "docentes": "Docente prueba 1",
                 "tiene_cuestionarios": True,
                 "requiere_examen": False,
                 "extiende_certificado": True,
                 "aval_organizacion": "UTN",
                 "estado": "aprobado",
                 "categoria": {"id": 1, "nombre": "Informatica"}
+            },
+            {
+                "id": 2,
+                "url": "prueba.com",
+                "titulo": "Curso Prueba 2",
+                "tema": "Prueba",
+                "version": "v2.0",
+                "anio_edicion": 2026,
+                "docentes": "Docente prueba 2",
+                "tiene_cuestionarios": False,
+                "requiere_examen": True,
+                "extiende_certificado": True,
+                "aval_organizacion": "",
+                "estado": "aprobado",
+                "categoria": {"id": 2, "nombre": "Redes"}
             }
         ],
         "total": 1,

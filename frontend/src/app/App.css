@@ -1,0 +1,107 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--space-5);
+}
+
+.title {
+  font-size: var(--text-xl);
+  margin-bottom: var(--space-5);
+  color: var(--color-text);
+}
+
+.state-message {
+  padding: var(--space-4);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-text-muted);
+  color: var(--color-text-muted);
+}
+
+.state-error {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-error);
+  color: var(--color-error);
+  padding: var(--space-4);
+  border-radius: var(--radius-sm);
+}
+
+.cursos-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.curso-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-2);
+  margin-bottom: var(--space-2);
+}
+
+.curso-card {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  margin-bottom: var(--space-4);
+  box-shadow: var(--shadow-sm);
+}
+
+.curso-card h2 {
+  margin: 0 0 var(--space-2) 0;
+  font-size: var(--text-lg);
+  color: var(--color-text);
+}
+
+.curso-meta {
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+  margin: var(--space-1) 0;
+}
+
+.curso-url a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: var(--text-sm);
+}
+
+.curso-url a:hover {
+  text-decoration: underline;
+}
+
+.curso-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+}
+
+.chip-categoria {
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-sm);
+  font-weight: 500;
+}
+
+.badge-estado {
+  display: inline-block;
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.badge-atributo{
+  background-color: var(--color-background);
+  color: var (--color-text-muted);
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  font-size: var(--text-sm);
+}

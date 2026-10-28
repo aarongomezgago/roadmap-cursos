@@ -4,7 +4,7 @@
 
 | Capa | Elección | Versión exacta | Por qué |
 |------|----------|----------------|---------|
-| Frontend | React + Vite + pnpm | react 19.x, vite x.y, pnpm 12.14 | UI declaratva y moderna integrada con herramientra de build rápida y gestor de paquetes eficiente basado en hard links. |
+| Frontend | React + Vite + pnpm | react 19.3.1, vite 8.3.5, pnpm 12.14 | UI declaratva y moderna integrada con herramientra de build rápida y gestor de paquetes eficiente basado en hard links. |
 | Backend | FastAPI + uv | fastapi 0.162.0, uv 0.13.4 | Framework REST de alto rendimiento con validación nativa y gestor de paquetes rápido. |
 | ORM / driver | SQLModel + psycopg | sqlmodel 0.0.48, psycopg 3.3.6| Simplifica la definición de schemas y el acceso a PostgreSQL |
 | BD | PostgreSQL | 18.6 | fijado por SPEC |
@@ -17,7 +17,7 @@
 | TD-001 | Estrategia de autenticación | JWT stateless / sesión server-side / OAuth externo | JWT stateless | Permite desacoplar totalmente el cliente SPA en React de FastAPI sin tener que almacenar la sesión en el servidor. |
 | TD-002 | Estrategia de paginación | offset + total / cursor-based | Offset + total | Facilita la navegación directa a páginas específicas en frontend y permite calcular y devolver el total de páginas. |
 | TD-003 | Formato de errores de API | envelope propio / RFC 7807 (problem+json) | Envelope propio (`{ "error": { "code", "message", "details" } }`) | Respuestas de error homogéneas con exception handler en FastAPI facilitan que el frontend muestre mensajes claros. |
-| TD-004 | Modelado de roadmap" | tabla intermedia con estado / referencia directa | Tabla intermedia | Permite registrar y actualizar metadatos para cada curso dentro de la trayectoria individual del usuario |
+| TD-004 | Modelado de roadmap | tabla intermedia con estado / referencia directa | Tabla intermedia | Permite registrar y actualizar metadatos para cada curso dentro de la trayectoria individual del usuario |
 
 ## 3. Arquitectura
 
