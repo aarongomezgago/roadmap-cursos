@@ -78,7 +78,7 @@ flowchart LR
 | # | Tarea | Módulo | Estado | Rama / Commit |
 |---|-------|--------|--------|---------------|
 | 0.1 | Estructura de carpetas + setup del workflow | M0 | [x] | feat/T1-scaffold-estructura |
-| 0.2 | docker-compose postgres | M0 | [ ] | |
+| 0.2 | docker-compose postgres | M0 | [x] | fea/T4-docker-compose-dev|
 | 0.3 | backend minimo| M0 |[x] | feat/T2-backend-minimo |
 | 0.4 | frontend minimo| M0 | [x] | feat/T3-frontend-minimo
 

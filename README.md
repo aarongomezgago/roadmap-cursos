@@ -8,6 +8,51 @@
 
 ## Como levantar
 
+### Requisitos previos
+- [Docker Desktop] o Docker con plugin Docker Compose
+
+### Pasos de ejecución
+1. Clonar el repositorio y posicionarse en la raíz:
+
+  ```bash
+  git clone https://github.com/aarongomezgago/roadmap-cursos
+  cd roadmap-cursos
+  ```
+
+2. Copiar el archivo de variables de entorno:
+
+  ```bash
+  cp .env.example.env
+  ```
+
+3. Levantar pila de servicios completa (PostgreSQL + Backend + Frontend)
+
+  ```bash
+  docker compose up --build
+  ```
+
+4. Verificación de servicios:
+   - **Frontend (React + Vite)**: [http://localhost:5173](http://localhost:5173)
+   - **Backend Health Check**: [http://localhost:8000/health](http://localhost:8000/health)
+   - **Documentación OpenAPI / Swagger**: [http://localhost:8000/docs](http://localhost:8000/docs)
+
+5. Probar la infraestructura localmente y verificar
+  > Asegurate de tener el archivo `.env` creado desde `.env.example`
+
+  ```bash
+  cp .env.example .env
+  docker compose up --build
+  ```
+
+  Verificá en otra terminal:
+
+  ```bash
+  curl http://localhost:8000/health
+  ```
+
+Ingresá en el navegador a `http://localhost:5173` y confirmá que el frontend carga la pantalla con el curso mock del catálogo.
+
+
 ---
 
 ## Qué hace
@@ -38,7 +83,7 @@
 | Instancia | Contenido | Estado |
 |-----------|-----------|--------|
 | A — Documentación | repo + 7 documentos | ✅ enviada a aprobación el 24/10/2026 |
-| B — Desarrollo del MVP | ejecución del Implementation Plan | ⏳ en desarrollo |
+| B — Desarrollo del MVP | ejecución del Implementation Plan| ⏳ en desarrollo |
 | C — Clase 27/10 | testing, Docker multi-stage, gestión del cambio | ⏳ |
 
 ## Versionado

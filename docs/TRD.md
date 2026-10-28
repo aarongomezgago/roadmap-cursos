@@ -83,7 +83,7 @@ roadmap-cursos/
 | Servicio | Imagen/base | Puerto | Rol |
 |----------|-------------|--------|-----|
 | postgres | postgres:18.6 | 5432 | base de datos |
-| backend | python:3.x-slim + uv | 8000 | API FastAPI (dev) |
+| backend | python:3.12-slim + uv | 8000 | API FastAPI (dev) |
 | frontend | node:20-alpine + pnpm | 5173 | SPA Vite (dev server) |
 
 ```mermaid
