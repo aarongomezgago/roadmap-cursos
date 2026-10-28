@@ -6,6 +6,8 @@
 
 **Stack:** React 19 + Vite + pnpm · FastAPI + uv · PostgreSQL 18.6 · Docker Compose (dev)
 
+## Como levantar
+
 ---
 
 ## Qué hace
