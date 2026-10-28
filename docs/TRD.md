@@ -5,8 +5,8 @@
 | Capa | Elección | Versión exacta | Por qué |
 |------|----------|----------------|---------|
 | Frontend | React + Vite + pnpm | react 19.x, vite x.y, pnpm 12.14 | UI declaratva y moderna integrada con herramientra de build rápida y gestor de paquetes eficiente basado en hard links. |
-| Backend | FastAPI + uv | fastapi 0.158.2, uv 0.13.4 | Framework REST de alto rendimiento con validación nativa y gestor de paquetes rápido. |
-| ORM / driver | SQLModel + psycopg | | Simplifica la definición de schemas y el acceso a PostgreSQL |
+| Backend | FastAPI + uv | fastapi 0.162.0, uv 0.13.4 | Framework REST de alto rendimiento con validación nativa y gestor de paquetes rápido. |
+| ORM / driver | SQLModel + psycopg | sqlmodel 0.0.48, psycopg 3.3.6| Simplifica la definición de schemas y el acceso a PostgreSQL |
 | BD | PostgreSQL | 18.6 | fijado por SPEC |
 | Infra (dev) | Docker + Compose | 24.0.7 | Garantiza aislamiento de entornos y poder replicar exactamente servicios entre desarrolladores. |
 

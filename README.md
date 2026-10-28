@@ -2,7 +2,7 @@
 
 > WebApp de gestión de comunidad de cursos: catálogo comunitario de cursos gratuitos + roadmaps personales de aprendizaje.
 >
-> **Estado:** 📚 Documentación (Instancia A) — desarrollo pendiente de aprobación docente.
+> **Estado:** 📚 Instancia B — arranque del desarrollo
 
 **Stack:** React 19 + Vite + pnpm · FastAPI + uv · PostgreSQL 18.6 · Docker Compose (dev)
 

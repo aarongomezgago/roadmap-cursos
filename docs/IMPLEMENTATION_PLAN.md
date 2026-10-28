@@ -75,14 +75,11 @@ flowchart LR
 
 ## 4. Ejecución (Instancia B)
 
-> **Regla:** 1 tarea (o lote coherente) = rama según tu flujo documentado + Commits convencionales.
-> Actualizá esta tabla mientras avanzás.
-
 | # | Tarea | Módulo | Estado | Rama / Commit |
 |---|-------|--------|--------|---------------|
-| 0.1 | Estructura de carpetas | M0 | [ ] | |
+| 0.1 | Estructura de carpetas + setup del workflow | M0 | [ x ] | feat/T1-scaffold-estructura |
 | 0.2 | docker-compose postgres | M0 | [ ] | |
-| … | | | | |
+| 0.3 | backend minimo|M0 |[x] | feat/T2/backend-minimo |
 
 ## 5. Estrategia de testing
 

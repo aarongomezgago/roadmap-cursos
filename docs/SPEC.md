@@ -67,7 +67,7 @@ En 12 meses, **Learnity** se consolidará como un espacio de referencia para la 
 | Capa | Tecnología | Versión exacta instalada |
 |------|------------|--------------------------|
 | Frontend | React + Vite + pnpm | react 19.x, vite x.y, pnpm 12.14 |
-| Backend | FastAPI + uv | fastapi 0.158.2, uv 0.13.4 |
+| Backend | FastAPI + uv | fastapi 0.162.0, uv 0.13.4 |
 | Base de datos | PostgreSQL | 18.6 |
 | Infra (dev) | Docker + Docker Compose | 24.0.7 |
 
@@ -97,3 +97,4 @@ En 12 meses, **Learnity** se consolidará como un espacio de referencia para la 
 | 20/10/2026 | SPEC de clase recibida en el aula | — |
 | 21/10/2026 | Primer commit: SPEC de clase tal cual | regla de la consigna |
 | 23/10/2026 | Refinamiento: agregación de Problema, Visión, Fuera de alcance y Vacíos de la SPEC original; suma de reglas de producto y restricciones técnicas | Completar la SPEC según plantilla |
+| 28/10/2026 | Version FastAPI | Instalacion de fastapi con uv |
