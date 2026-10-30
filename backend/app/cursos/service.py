@@ -46,7 +46,8 @@ def validar_aporte_curso(
     # Campos obligatorios
     campos_obligatorios = [
         "titulo", "tema", "url", "version", 
-        "anio_edicion", "docentes", "categoria_id", "declara_que_lo_tomo"
+        "anio_edicion", "docentes", "categoria_id", "declara_que_lo_tomo",
+        "tiene_cuestionario", "requiere_examen", "extiende_certificado"
     ]
     for campo in campos_obligatorios:
         valor = datos_curso.get(campo)

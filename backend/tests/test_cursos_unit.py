@@ -50,7 +50,11 @@ def test_validar_aporte_curso_camino_feliz_retorna_true():
         "anio_edicion": 2024,
         "docentes": "Docente test",
         "categoria_id": 1,
-        "declara_que_lo_tomo": True
+        "declara_que_lo_tomo": True,
+        "tiene_cuestionario": True,
+        "requiere_examen": True,
+        "extiende_certificado": True,
+        "aval_organizacion": ""
     }
     urls_existentes = {"https://www.aprender.com"}
 
@@ -67,7 +71,11 @@ def test_validar_aporte_curso_url_formato_invalido_lanza_exception():
         "anio_edicion": 2024,
         "docentes": "Docente test",
         "categoria_id": 1,
-        "declara_que_lo_tomo": True
+        "declara_que_lo_tomo": True,
+        "tiene_cuestionario": True,
+        "requiere_examen": True,
+        "extiende_certificado": True,
+        "aval_organizacion": ""
     }
     urls_existentes = {"https://www.aprender.com"}
 
@@ -86,7 +94,11 @@ def test_validar_aporte_curso_url_duplicada_lanza_exception():
         "anio_edicion": 2024,
         "docentes": "Docente test",
         "categoria_id": 1,
-        "declara_que_lo_tomo": True
+        "declara_que_lo_tomo": True,
+        "tiene_cuestionario": True,
+        "requiere_examen": True,
+        "extiende_certificado": True,
+        "aval_organizacion": ""
     }
     urls_existentes = {url_repetida}
 
@@ -104,7 +116,74 @@ def test_validar_aporte_curso_no_tomo_curso_retorna_true():
         "anio_edicion": 2024,
         "docentes": "Docente test",
         "categoria_id": 1,
-        "declara_que_lo_tomo": False
+        "declara_que_lo_tomo": False,
+        "tiene_cuestionario": True,
+        "requiere_examen": True,
+        "extiende_certificado": True,
+        "aval_organizacion": ""
+    }
+    urls_existentes = {"https://www.aprender.com"}
+
+    resultado = validar_aporte_curso(datos, urls_existentes, anio_actual=2026)
+
+    assert resultado is True
+
+def test_validar_aporte_curso_no_tiene_cuestionarios_retorna_true():
+    datos = {
+        "titulo": "Test",
+        "tema": "Informatica",
+        "url": "https://www.test.com",
+        "version": "v1.0",
+        "anio_edicion": 2024,
+        "docentes": "Docente test",
+        "categoria_id": 1,
+        "declara_que_lo_tomo": True,
+        "tiene_cuestionario": False,
+        "requiere_examen": True,
+        "extiende_certificado": True,
+        "aval_organizacion": ""
+    }
+    urls_existentes = {"https://www.aprender.com"}
+
+    resultado = validar_aporte_curso(datos, urls_existentes, anio_actual=2026)
+
+    assert resultado is True
+
+def test_validar_aporte_curso_no_requiere_examen_retorna_true():
+    datos = {
+        "titulo": "Test",
+        "tema": "Informatica",
+        "url": "https://www.test.com",
+        "version": "v1.0",
+        "anio_edicion": 2024,
+        "docentes": "Docente test",
+        "categoria_id": 1,
+        "declara_que_lo_tomo": True,
+        "tiene_cuestionario": True,
+        "requiere_examen": False,
+        "extiende_certificado": True,
+        "aval_organizacion": ""
+    }
+    urls_existentes = {"https://www.aprender.com"}
+
+    resultado = validar_aporte_curso(datos, urls_existentes, anio_actual=2026)
+
+    assert resultado is True
+
+def test_validar_aporte_curso_no_extiende_certificado_retorna_true():
+    datos = {
+        "titulo": "Test",
+        "tema": "Informatica",
+        "url": "https://www.test.com",
+        "version": "v1.0",
+        "anio_edicion": 2024,
+        "docentes": "Docente test",
+        "categoria_id": 1,
+        "declara_que_lo_tomo": True,
+        "tiene_cuestionario": True,
+        "requiere_examen": True,
+        "extiende_certificado": False,
+        "aval_organizacion": ""
     }
     urls_existentes = {"https://www.aprender.com"}
 
@@ -121,7 +200,11 @@ def test_validar_aporte_curso_anio_futuro_lanza_exception():
         "anio_edicion": 2030,
         "docentes": "Docente test",
         "categoria_id": 1,
-        "declara_que_lo_tomo": True
+        "declara_que_lo_tomo": True,
+        "tiene_cuestionario": True,
+        "requiere_examen": True,
+        "extiende_certificado": True,
+        "aval_organizacion": ""
     }
     urls_existentes = {"https://www.aprender.com"}
 
@@ -139,7 +222,11 @@ def test_validar_aporte_curso_anio_antiguo_lanza_exception():
         "anio_edicion": 1800,
         "docentes": "Docente test",
         "categoria_id": 1,
-        "declara_que_lo_tomo": True
+        "declara_que_lo_tomo": True,
+        "tiene_cuestionario": True,
+        "requiere_examen": True,
+        "extiende_certificado": True,
+        "aval_organizacion": ""
     }
     urls_existentes = {"https://www.aprender.com"}
 
