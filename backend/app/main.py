@@ -1,10 +1,15 @@
 from fastapi import FastAPI
+from app.aportes.router import router as aportes_router
+from app.cursos.router import router as cursos_router
 
 app = FastAPI(
     title="Learnity API",
     version="0.1.0",
     description="API para catalogo y roadmaps de cursos"
 )
+
+app.include_router(aportes_router, prefix="/api/v1")
+app.include_router(cursos_router, prefix="/api/v1")
 
 @app.get("/health", tags=["Health"])
 def health_check():
