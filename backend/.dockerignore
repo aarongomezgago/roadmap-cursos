@@ -6,4 +6,5 @@ __pycache__
 .pytest_cache
 .git
 .gitignore
-tests
+tests/
+.env

@@ -1,0 +1,9 @@
+.git
+node_modules
+dist
+coverage
+*.test.js
+*.test.jsx
+*.spec.js
+*.spec.jsx
+.env
