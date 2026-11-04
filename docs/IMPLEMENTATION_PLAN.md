@@ -80,23 +80,27 @@ flowchart LR
 | 0.1 | Estructura de carpetas + setup del workflow | M0 | [x] | feat/T1-scaffold-estructura |
 | 0.2 | docker-compose postgres | M0 | [x] | fea/T4-docker-compose-dev|
 | 0.3 | backend minimo| M0 |[x] | feat/T2-backend-minimo |
-| 0.4 | frontend minimo| M0 | [x] | feat/T3-frontend-minimo
+| 0.4 | frontend minimo| M0 | [x] | feat/T3-frontend-minimo |
+| T1-T6 | testing unitarios e integracion (backend + frontend) | Testing | [x] | feat/T1-T6 |
+| T7-T9 | Dockerfile backend y frontend multi-stage + optimizacion | Infra | [x] | feat/T7-T9 |
+| T10 | Docker compose con healthchecks | Infra | [x] | feat/T10-docker-compose-healthchecks |
 
 ## 5. Estrategia de testing
 
 > Se **planificá** acá y se **implementa** en la clase del 27/10.
 
-- **Unit tests (services):** funciones puras de negocio con Patrón AAA, sin BD ni HTTP.
-  - Reglas de validación en el formulario de aportes (declaración obligatoria de toma, formato de URL).
-  - Reglas de unicidad del roadmap personal (impedir agregar cursos duplicados).
-  - Transiciones de estado del ciclo de vida del curso.
-- **Integration tests (repositories/services):** contra BD real PostgreSQL.
-  - Endpoints de API REST (códigos de respuesta HTTP y estructura unificada de errores).
-  - Restricciones SQL (`UNIQUE`, llaves foráneas, paginación con offset)
-- **Frontend:** hooks con Vitest.
-  - Hooks de estado de carga, renderizado de skeletons y empty states
-  - Comportamiento del paginador y cambio de páginas en catálogo y roadmap
-- Objetivo de cobertura: ≥ 80% de cobertura en servicios de backend y componentes principales del frontend
+- **Unit tests (backend)**: Implementados con pytest para servicios y funciones puras de negocio utilizando patron AAA sin BD ni HTTP
+  - Reglas de validacion y estados de aportes
+  - Reglas del roadmap personal
+- **Integration tests (backend)**: Pruebas de integración sobre API REST
+  - Creacion, busqueda, actualizacion, eliminacion de cursos
+  - Flujo de estados de aporte
+- **Frontend tests**: Implementados con vitest
+  - Carga, recarga, error de red, paginacion en hook catalogo
+- **Healthchecks e infraestructura**: Integrados en docker-compose.yml
+  - Monitoreo de endpoints /health en backend y frontend
+  - Orquestacion entre PostgreSQL, backend y frontend
+- **Cobertura alcanzada:** Objetivo de ≥ 80% de cobertura en servicios de backend y componentes/hooks principales del frontend
 
 ## 6. Riesgos del plan
 
